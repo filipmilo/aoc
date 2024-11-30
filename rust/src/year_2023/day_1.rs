@@ -1,7 +1,7 @@
 use std::fs;
 
 pub fn solve_part_1() -> i32 {
-    fs::read_to_string("src/inputs/day_1.txt")
+    fs::read_to_string("src/year_2023/inputs/day_1.txt")
         .expect("Oops, no file found.")
         .lines()
         .map(|line| {
@@ -38,7 +38,7 @@ pub fn solve_part_2() -> i32 {
         ("eight", '8'),
         ("nine", '9'),
     ];
-    fs::read_to_string("src/inputs/day_1.txt")
+    fs::read_to_string("src/year_2023/inputs/day_1.txt")
         .expect("Oops, no file found.")
         .lines()
         .map(|line| {

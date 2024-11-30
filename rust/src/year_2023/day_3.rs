@@ -15,7 +15,7 @@ struct AccumulatePart2 {
 
 //140 -> one line size
 pub fn _solve_part_1() -> u32 {
-    let engine_map = fs::read_to_string("src/inputs/day_3.txt")
+    let engine_map = fs::read_to_string("src/year_2023/inputs/day_3.txt")
         .expect("Oops, no file found.")
         .chars()
         .collect::<Vec<char>>();
@@ -67,7 +67,7 @@ pub fn _solve_part_1() -> u32 {
 }
 
 pub fn solve_part_2() -> u32 {
-    let engine_map = fs::read_to_string("src/inputs/day_3.txt")
+    let engine_map = fs::read_to_string("src/year_2023/inputs/day_3.txt")
         .expect("Oops, no file found.")
         .chars()
         .collect::<Vec<char>>();

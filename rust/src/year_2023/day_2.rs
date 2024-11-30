@@ -39,7 +39,7 @@ impl Color {
 }
 
 pub fn solve_part_1() -> i32 {
-    fs::read_to_string("src/inputs/day_2.txt")
+    fs::read_to_string("src/year_2023/inputs/day_2.txt")
         .expect("Oops, no file found.")
         .lines()
         .filter_map(|l| {
@@ -82,7 +82,7 @@ pub fn solve_part_1() -> i32 {
 }
 
 pub fn solve_part_2() -> i32 {
-    fs::read_to_string("src/inputs/day_2.txt")
+    fs::read_to_string("src/year_2023/inputs/day_2.txt")
         .expect("Oops, no file found.")
         .lines()
         .map(|l| {
