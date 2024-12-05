@@ -1,4 +1,4 @@
-use std::{collections::HashMap, fs};
+use std::{cmp::Ordering, collections::HashMap, fs};
 
 pub fn solve_part_1() -> i32 {
     let input =
@@ -62,12 +62,12 @@ pub fn solve_part_2() -> i32 {
             to_check.sort_by(|a, b| match map.get(a) {
                 Some(v) => {
                     if v.contains(b) {
-                        0.cmp(&1)
+                        Ordering::Less
                     } else {
-                        1.cmp(&1)
+                        Ordering::Greater
                     }
                 }
-                None => 1.cmp(&1),
+                None => Ordering::Equal,
             });
 
             Some(to_check[to_check.len() / 2])
